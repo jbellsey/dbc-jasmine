@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Animation Harness</title>
+    <script src="animation.js"></script>
+</head>
+<body>
+
+<script>
+
+    (function(){
+
+        console.log('has the animation run yet?', myAnimation.hasAnimationRun);
+        myAnimation.run();
+        console.log('has the animation run yet?', myAnimation.hasAnimationRun);
+
+        setTimeout(function statusChecker() {
+            console.log('after the timer, has the animation run?', myAnimation.hasAnimationRun);
+        }, myAnimation.animationLength)
+    }());
+
+</script>
+
+</body>
+</html>

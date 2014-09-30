@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ajax Harness</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="ajax.js"></script>
+</head>
+<body>
+
+<script>
+
+    (function(){
+
+        OffsiteAPI.retrieveData()
+                .done(function gotData(data) {
+                	console.log('got data', data);
+                });
+
+    }());
+
+</script>
+
+</body>
+</html>
